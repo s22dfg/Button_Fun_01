@@ -8,8 +8,12 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
+    var num = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,6 +25,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        
+        if num==1 {
+             view.backgroundColor = UIColor.green
+            num=0
+        }
+        else {
+            view.backgroundColor = UIColor.yellow
+            num=1
+        }
+    }
+    
 }
 
